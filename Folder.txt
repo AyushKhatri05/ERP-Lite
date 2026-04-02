@@ -1,0 +1,107 @@
+erp-lite/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── layout/
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── DashboardLayout.jsx
+│   │   │   │   └── Navbar.jsx
+│   │   │   ├── auth/
+│   │   │   │   ├── LoginForm.jsx
+│   │   │   │   ├── TwoFactorAuth.jsx
+│   │   │   │   └── ProtectedRoute.jsx
+│   │   │   ├── inventory/
+│   │   │   │   ├── ProductList.jsx
+│   │   │   │   ├── InwardForm.jsx
+│   │   │   │   ├── OutwardForm.jsx
+│   │   │   │   └── StockAlerts.jsx
+│   │   │   ├── sales/
+│   │   │   │   ├── BillingInterface.jsx
+│   │   │   │   ├── InvoiceGenerator.jsx
+│   │   │   │   └── SalesHistory.jsx
+│   │   │   └── analytics/
+│   │   │       ├── DemandForecast.jsx
+│   │   │       └── ReorderAlerts.jsx
+│   │   ├── pages/
+│   │   │   ├── admin/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── UserManagement.jsx
+│   │   │   │   └── AuditLogs.jsx
+│   │   │   ├── inventory/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── ManageProducts.jsx
+│   │   │   │   └── Transactions.jsx
+│   │   │   ├── sales/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── NewSale.jsx
+│   │   │   │   └── Invoices.jsx
+│   │   │   └── analytics/
+│   │   │       └── Insights.jsx
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   ├── useInventory.js
+│   │   │   └── useSales.js
+│   │   ├── utils/
+│   │   │   ├── api.js
+│   │   │   ├── validation.js
+│   │   │   └── encryption.js
+│   │   └── styles/
+│   │       └── globals.css
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── .env.local
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   ├── authController.js
+│   │   │   ├── inventoryController.js
+│   │   │   ├── salesController.js
+│   │   │   ├── analyticsController.js
+│   │   │   └── userController.js
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.js
+│   │   │   ├── rbacMiddleware.js
+│   │   │   ├── validationMiddleware.js
+│   │   │   ├── auditMiddleware.js
+│   │   │   └── rateLimiter.js
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   ├── Product.js
+│   │   │   ├── Transaction.js
+│   │   │   ├── Sale.js
+│   │   │   ├── AuditLog.js
+│   │   │   └── ReorderAlert.js
+│   │   ├── services/
+│   │   │   ├── authService.js
+│   │   │   ├── encryptionService.js
+│   │   │   ├── inventoryService.js
+│   │   │   ├── analyticsService.js
+│   │   │   └── emailService.js
+│   │   ├── utils/
+│   │   │   ├── database.js
+│   │   │   ├── logger.js
+│   │   │   └── validators.js
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js
+│   │   │   ├── inventoryRoutes.js
+│   │   │   ├── salesRoutes.js
+│   │   │   ├── analyticsRoutes.js
+│   │   │   └── userRoutes.js
+│   │   └── config/
+│   │       └── index.js
+│   ├── scripts/
+│   │   ├── migrate.js
+│   │   └── seed.js
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+├── database/
+│   ├── migrations/
+│   │   ├── 001_initial_schema.sql
+│   │   └── 002_add_triggers.sql
+│   └── seeds/
+│       └── seed_data.sql
+│
+└── docker-compose.yml
