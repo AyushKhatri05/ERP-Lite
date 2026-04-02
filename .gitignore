@@ -1,13 +1,12 @@
-.env
-.env.local
+
 
 # node modules
-/backend/node_modules
-/frontend/node_modules
+/node_modules
 
 # env files
-/backend/.env
-/backend/.env.local
-/frontend/.env
-/frontend/.env.local
+
+.env
+.env.local
+/.next
+
 
